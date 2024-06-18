@@ -1,0 +1,5 @@
+{
+  "*": "prettier -wu --ignore-path .gitignore",
+  "*.md": ["markdownlint-cli2 --fix"],
+  "package.json": ["syncpack format --source", "sort-package-json"]
+}

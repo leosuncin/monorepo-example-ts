@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+pnpm exec lint-staged
+pnpm exec sherif --fix .

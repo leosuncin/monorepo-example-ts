@@ -1,0 +1,35 @@
+{
+  "name": "@monorepo/contract",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "@monorepo/source": "./src/index.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "dev": "pnpm build --watch",
+    "lint": "eslint --report-unused-disable-directives ."
+  },
+  "dependencies": {
+    "@monorepo/schemas": "workspace:*"
+  },
+  "devDependencies": {
+    "@ts-rest/core": "3.45.2",
+    "eslint": "9.5.0",
+    "eslint-config-unjs": "0.3.2",
+    "typescript": "5.5.1-rc",
+    "zod": "3.23.8"
+  },
+  "peerDependencies": {
+    "@ts-rest/core": "^3.45.0",
+    "zod": "^3.23.0"
+  }
+}

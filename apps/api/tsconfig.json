@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "references": [
+    {
+      "path": "../../libs/schemas"
+    },
+    {
+      "path": "../../libs/contract"
+    },
+    {
+      "path": "../../libs/data-access"
+    }
+  ]
+}

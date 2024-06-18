@@ -1,0 +1,21 @@
+{
+  "name": "e2e",
+  "version": "0.0.0",
+  "private": true,
+  "description": "End-to-end tests for the TodoMVC app using Playwright Test",
+  "keywords": [],
+  "license": "GPL-3.0-only",
+  "author": "Jaime Leonardo Suncin Cruz",
+  "type": "module",
+  "scripts": {
+    "prepare": "playwright install",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "8.4.1",
+    "@monorepo/contract": "workspace:*",
+    "@playwright/test": "1.44.1",
+    "@types/node": "20.14.2",
+    "typescript": "5.5.1-rc"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "composite": false
+  },
+  "references": [
+    {
+      "path": "./libs/schemas"
+    },
+    {
+      "path": "./libs/data-access"
+    },
+    {
+      "path": "./libs/contract"
+    },
+    {
+      "path": "./apps/api"
+    },
+    {
+      "path": "./apps/client"
+    }
+  ]
+}
